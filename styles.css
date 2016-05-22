@@ -296,5 +296,9 @@ a{
 
 .material-icons.md-48 { font-size: 48px; }
 .demo-content{
-    margin-top: 50px;
+    position: relative;
+    margin: 50px;
+    padding: 20px;
+    width: 95%;
+    height: 100%;
 }
