@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Top This!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
     <!--Load Required Scripts: Angular / Bootstrap / JQuery-->
@@ -9,27 +8,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="javascripts/angular.js"></script>
 </head>
 
 <body>
 <div class="container" ng-app="topThis" ng-controller="mainCtrl">
         <div>
-            <h3>{{actor}}</h3>
-            <img class="img-responsive" src="{{image}}" alt="image">
+            <h3>Top Chrts</h3>
+            <ol>
+                <li>Robert Sample</li>
+            </ol>
+            <a href="/">Vote for more</a>
         </div>
-    <table>
-        <tr>
-            <div class="col-sm-6">Rating = {{rating}}</div>
-        </tr>
-        <tr>
-            <form>
-                <div class="col-sm-1"><button type="submit" ng-click="upvote()">upvote</button></div>
-                <div class="col-sm-1"><button type="submit" ng-click="downvote()">downvote</button></div>
-                <a href="list">Top Chrts</a>
-            </form>
-        </tr>
-    </table>
 </div>
 <script>
     var app = angular.module('topThis', []);
