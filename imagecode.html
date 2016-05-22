@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+    function sendForm(form) {
+      var fileElement = document.getElementById("imageUpload");
+      var file = (fileElement.files)[0];
+    }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <input type="file" id="imageUpload" accept="image/*">
+      <input type="button" value="test" onClick="sendForm(this.form)">
+    </form>
+  </body>
+<html>
