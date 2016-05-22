@@ -14,45 +14,28 @@
 
 <body>
 <div class="container" ng-app="topThis" ng-controller="mainCtrl">
-        <div>
-            <h3>{{actor}}</h3>
-            <img class="img-responsive" src="{{image}}" alt="image">
-        </div>
+
+
+
+
+
+
+
+
+        <div class="col-sm-6"><img class="img-responsive" src="images/{{images[0].url}}" alt="image"></div>
+        <div class="col-sm-6"><img class="img-responsive" src="images/{{images[1].url}}" alt="image"></div>
     <table>
         <tr>
-            <div class="col-sm-6">Rating = {{rating}}</div>
+            <div class="col-sm-6">Rating = {{ratings[0].upvotes}}</div>
+            <div class="col-sm-6">Rating = {{ratings[1].upvotes}}</div>
         </tr>
         <tr>
             <form>
-                <div class="col-sm-1"><button type="submit" ng-click="upvote()">upvote</button></div>
-                <div class="col-sm-1"><button type="submit" ng-click="downvote()">downvote</button></div>
-                <a href="list">Top Chrts</a>
+                <div class="col-sm-6"><button type="submit" ng-click="upvote1()">upvote</button></div>
+                <div class="col-sm-6"><button type="submit" ng-click="upvote2()">upvote</button></div>
             </form>
         </tr>
     </table>
 </div>
-<script>
-    var app = angular.module('topThis', []);
-    app.controller('mainCtrl', function ($scope) {
-        // Pull from db
-        $scope.rating = 0;
-        $scope.image = "images/ge.JPG";
-        $scope.actor = "Robert Sample"
-        $scope.upvote = function(){
-            $scope.rating += 1;
-            // upload to db, pull new image
-            $scope.actor = ""
-            $scope.image = "";
-            $scope.rating = 0
-        }
-        $scope.downvote = function(){
-            $scope.rating -= 1;
-            // upload to db, pull new image
-            $scope.actor = ""
-            $scope.image = "";
-            $scope.rating = 0
-        }
-    });
-</script>
 </body>
 </html>
