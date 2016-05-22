@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Top This!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
     <!--Load Required Scripts: Angular / Bootstrap / JQuery-->
@@ -8,10 +9,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="javascripts/angular.js"></script>
 </head>
 
 <body>
 <div class="container" ng-app="topThis" ng-controller="mainCtrl">
+
+
+
+
+
+
+
+
         <div class="col-sm-6"><img class="img-responsive" src="images/{{images[0].url}}" alt="image"></div>
         <div class="col-sm-6"><img class="img-responsive" src="images/{{images[1].url}}" alt="image"></div>
     <table>
@@ -27,39 +37,5 @@
         </tr>
     </table>
 </div>
-<script>
-    var app = angular.module('topThis', []);
-    app.controller('mainCtrl', function ($scope) {
-        $scope.name = 'misha';
-        $scope.ratings = [{upvotes:0}, {upvotes:0}];
-        $scope.images = [{url: "ge.JPG"}, {url: "datboi.jpg"}];
-        $scope.upvote1 = function(){
-            if ($scope.ratings[0].voted) {
-                $scope.ratings[0].upvotes -= 1;
-                $scope.ratings[0].voted = false;
-            } else {
-                $scope.ratings[0].upvotes += 1;
-                $scope.ratings[0].voted = true;
-            }
-            if ($scope.ratings[1].voted) {
-                $scope.ratings[1].upvotes -= 1;
-                $scope.ratings[1].voted = false;
-            }
-        }
-        $scope.upvote2 = function(){
-            if ($scope.ratings[1].voted) {
-                $scope.ratings[1].upvotes -= 1;
-                $scope.ratings[1].voted = false;
-            } else {
-                $scope.ratings[1].upvotes += 1;
-                $scope.ratings[1].voted = true;
-            }
-            if ($scope.ratings[0].voted) {
-                $scope.ratings[0].upvotes -= 1;
-                $scope.ratings[0].voted = false;
-            }
-        }
-    });
-</script>
 </body>
 </html>
