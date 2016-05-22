@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b83bfc75-eef7-4877-aa56-177af9d182ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/error.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="topthis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +46,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74786323">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.491453">
+              <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -296,8 +291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74786323">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.491453">
+          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
           <folding />
         </state>
       </provider>
