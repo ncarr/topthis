@@ -275,9 +275,9 @@ a{
 }
 
 .thing{ 
-    background-color: green;
-    padding: 10%;
-    
+    position: relative;
+    top: 10px;
+    margin-bottom: 25px;
 }
 
 .button{ 
