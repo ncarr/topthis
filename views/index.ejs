@@ -14,28 +14,34 @@
 
 <body>
 <div class="container" ng-app="topThis" ng-controller="mainCtrl">
+    <h1>{{actors[index].name}}</h1>
+    <h2>Rating: {{actors[index].rating}}</h2>
+    <form>
+        <button type="submit" ng-click="upvote()">upvote</button>
+        <button type="submit" ng-click="downvote()">downvote</button>
+    </form>
+    <!--Bug: image won't load sometimes. Need to implement a promise in angularJS-->
+    <div class="col-sm-6"><img class="img-responsive" src="{{actors[index].image}}" alt="image"></div>
 
 
 
 
 
 
-
-
-        <div class="col-sm-6"><img class="img-responsive" src="images/{{images[0].url}}" alt="image"></div>
-        <div class="col-sm-6"><img class="img-responsive" src="images/{{images[1].url}}" alt="image"></div>
-    <table>
-        <tr>
-            <div class="col-sm-6">Rating = {{ratings[0].upvotes}}</div>
-            <div class="col-sm-6">Rating = {{ratings[1].upvotes}}</div>
-        </tr>
-        <tr>
-            <form>
-                <div class="col-sm-6"><button type="submit" ng-click="upvote1()">upvote</button></div>
-                <div class="col-sm-6"><button type="submit" ng-click="upvote2()">upvote</button></div>
-            </form>
-        </tr>
-    </table>
+        <!--<div class="col-sm-6"><img class="img-responsive" src="images/{{images[0].url}}" alt="image"></div>-->
+        <!--<div class="col-sm-6"><img class="img-responsive" src="images/{{images[1].url}}" alt="image"></div>-->
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<div class="col-sm-6">Rating = {{ratings[0].upvotes}}</div>-->
+            <!--<div class="col-sm-6">Rating = {{ratings[1].upvotes}}</div>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<form>-->
+                <!--<div class="col-sm-6"><button type="submit" ng-click="upvote1()">upvote</button></div>-->
+                <!--<div class="col-sm-6"><button type="submit" ng-click="upvote2()">upvote</button></div>-->
+            <!--</form>-->
+        <!--</tr>-->
+    <!--</table>-->
 </div>
 </body>
 </html>

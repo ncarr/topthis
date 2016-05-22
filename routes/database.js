@@ -10,4 +10,8 @@ router.get('/entries', function (req, res) {
     });
 });
 
+
+router.put('/upvote/:name', function (req, res, next) {
+});
+
 module.exports = router;

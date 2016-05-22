@@ -5,7 +5,8 @@ var mongoose = require('mongoose');
 
 var actorSchema = new mongoose.Schema({
     name: String,
-    image: String
+    image: String,
+    rating: Number
 });
 
 module.exports = mongoose.model('actor', actorSchema);
